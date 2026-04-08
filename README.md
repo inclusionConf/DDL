@@ -440,122 +440,71 @@ We refer to the open-source versions of the aforementioned models.
         <td>SIGGRAPH Asia 2022</td>
     </tr>
   <tr>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td rowspan="7">TTS</td>
+        <td>Yourtts</td>
+        <td>VAE based</td>
+        <td>PMLR 2022</td>
     </tr>
   <tr>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>Chattts</td>
+        <td>GAN based</td>
+        <td>Unknown</td>
     </tr>
   <tr>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>F5-TTS</td>
+        <td>Diffusion based</td>
+        <td>Arxiv 2024</td>
     </tr>
   <tr>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>MARS5_TTS</td>
+        <td>Diffusion based</td>
+        <td>Unknown</td>
     </tr>
   <tr>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>VITS-VCTK</td>
+        <td>VAE based</td>
+        <td>PMLR 2021</td>
+    </tr>
+  <tr>
+        <td>GPT-SoVITS</td>
+        <td>GAN based</td>
+        <td>Arxiv 2024</td>
     </tr>
     <tr>
-        <td rowspan="6">Face Editing (FE)</td>
-        <td>DualStyleGAN</td>
-        <td>6000</td>
-        <td>--</td>
-        <td>600</td>
+        <td>Xtts</td>
+        <td>VAE based</td>
+        <td>Arxiv 2024</td>
     </tr>
     <tr>
-        <td>SD_inpainting</td>
-        <td>10000</td>
-        <td>--</td>
-        <td>--</td>
+        <td rowspan="2">VC</td>
+        <td>VALL-E</td>
+        <td>GAN-based</td>
+        <td>Arxiv 2023</td>
     </tr>
     <tr>
-        <td>SDxl_0.1_inpainting</td>
-        <td>--</td>
-        <td>2200</td>
-        <td>--</td>
+        <td>OpenVoice</td>
+        <td>GAN-based</td>
+        <td>Arxiv 2023</td>
+    </tr>
+  <tr>
+        <td rowspan="4">VC</td>
+        <td>VidMuse</td>
+        <td>Diffusion based</td>
+        <td>CVPR 2025</td>
     </tr>
     <tr>
-        <td>HFGI</td>
-        <td>--</td>
-        <td>--</td>
-        <td>3000</td>
+        <td>AudioX</td>
+        <td>Diffusion based</td>
+        <td>Arxiv 2025</td>
     </tr>
     <tr>
-        <td>pSp</td>
-        <td>--</td>
-        <td>--</td>
-        <td>6000</td>
+        <td>MMAudio</td>
+        <td>GAN-based</td>
+        <td>CVPR 2025</td>
     </tr>
     <tr>
-        <td>FaceInpainting</td>
-        <td>--</td>
-        <td>--</td>
-        <td>3000</td>
-    </tr>
-    <tr>
-        <td>Face Super-Resolution (FSR)</td>
-        <td>GPEN</td>
-        <td>198000</td>
-        <td>27000</td>
-        <td>13950</td>
-    </tr>
-    <tr>
-        <td rowspan="7">Manual Face PhotoShop (MFPS)</td>
-        <td>Random Facial Component Swapping</td>
-        <td>15000</td>
-        <td>--</td>
-        <td>600</td>
-    </tr>
-    <tr>
-        <td>Random Facial Component Excision</td>
-        <td>--</td>
-        <td>--</td>
-        <td>3000</td>
-    </tr>
-    <tr>
-        <td>Full Face Swapping</td>
-        <td>--</td>
-        <td>--</td>
-        <td>6000</td>
-    </tr>
-    <tr>
-        <td>Facial Artifact Injection</td>
-        <td>--</td>
-        <td>--</td>
-        <td>3000</td>
-    </tr>
-    <tr>
-        <td>Random Region Erasure</td>
-        <td>--</td>
-        <td>--</td>
-        <td>3000</td>
-    </tr>
-    <tr>
-        <td>Background Replacement</td>
-        <td>--</td>
-        <td>--</td>
-        <td>6000</td>
-    </tr>
-    <tr>
-        <td>ImageFiltering</td>
-        <td>--</td>
-        <td>--</td>
-        <td>3000</td>
-    </tr>
-    <tr>
-        <td>Total</td>
-        <td>50</td>
-        <td>424800</td>
-        <td>88200</td>
-        <td>104000</td>
+        <td>FoleyCrafter</td>
+        <td>Diffusion based</td>
+        <td>Arxiv 2024</td>
     </tr>
 </table>
