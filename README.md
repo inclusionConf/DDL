@@ -1,3 +1,7 @@
+# DDL: A Large-Scale Datasets for Deepfake Detection and Localization in Diversified Real-World Scenarios
+
+Dataset link: https://modelscope.cn/datasets/DDLteam/DDL_dataset/files
+
 This supplementary material provides additional information to the manuscript, including deepfake generation pipeline, manipulated examples, experimental details, and deepfake methods.
 
 ## Deepfake Image Generation
@@ -18,7 +22,10 @@ In addition, benefiting from the decoupled nature of the multi-face forgery proc
 <div align="center">
   <img src="https://github.com/inclusionConf/DDL/blob/main/generation_pipeline_img_1.jpg">
 </div>
-Fig.1 Image generation pipeline. The red boxes denote forged images. Italic text indicates generation processing operations. The Generation Model refers to different visual generation models. The Face Blending denotes the fusion model for integrating the forged face with the real background. The LLM synthesizes face-related prompts.
+<div align="center">
+  Fig.1 Image generation pipeline. The red boxes denote forged images. Italic text indicates generation processing operations. The Generation Model refers to different visual generation models. The Face Blending denotes the fusion model for integrating the forged face with the real background. The LLM synthesizes face-related prompts.
+</div>
+
 
 ## Deepfake Audio-Video Generation
 ### Audio-Visual Local Manipulation:
@@ -40,7 +47,10 @@ Furthermore, end-to-end audio-visual synthesis models, such as Kling 2.1 and Wan
 <div align="center">
   <img src="https://github.com/inclusionConf/DDL/blob/main/generation_pipeline_av_1.pdf.png">
 </div>
-Fig.2 Audio-Visual generation pipeline. The LLM manipulates speech transcripts (a) or synthesizes face prompts (b). Generation Model denotes visual/audio generation models. Red waveforms/faces indicate manipulated audio/video. <Replace/Delete/Insert> in green boxes denote local manipulations. Italicized Whisper/Denoiser denote transcript generation/noise separation; other italics indicate preprocessing. Dashed lines represent optional inputs.
+<div align="center">
+  Fig.2 Audio-Visual generation pipeline. The LLM manipulates speech transcripts (a) or synthesizes face prompts (b). Generation Model denotes visual/audio generation models. Red waveforms/faces indicate manipulated audio/video. <Replace/Delete/Insert> in green boxes denote local manipulations. Italicized Whisper/Denoiser denote transcript generation/noise separation; other italics indicate preprocessing. Dashed lines represent optional inputs.
+</div>
+
 
 ## Manipulated Examples
 We primarily demonstrate examples of three innovative forgery patterns and different blending methods in image datasets.
@@ -48,34 +58,46 @@ We primarily demonstrate examples of three innovative forgery patterns and diffe
 ### Forgery Mode Examples
 In this section, we present innovative forgery modes as follows:
 
-**Hybrid Facial Forgery (HFF) Mode**: As illustrated in Fig. below, compared to conventional forgery mode, HFF applies two distinct forgery techniques (A and B) to manipulate different faces within a multi-person image. This approach increases the complexity of forgery content, reflecting the diverse forgery landscape in real-world scenarios.
+**Hybrid Facial Forgery (HFF) Mode**: As illustrated in Fig.3 below, compared to conventional forgery mode, HFF applies two distinct forgery techniques (A and B) to manipulate different faces within a multi-person image. This approach increases the complexity of forgery content, reflecting the diverse forgery landscape in real-world scenarios.
 
-**Audio-Visual Asynchronous Manipulation (AVAM) Mode**: As shown in Fig. below, AVAM selects different temporal segments to modify audio content and video facial regions separately. This method also aligns with the multifaceted nature of real-world forgeries. Moreover, in audio-visual modalities, we incorporate the HFF forgery pattern by applying varied manipulation techniques across different temporal segments.
+<div align="center">
+  <img src="https://github.com/inclusionConf/DDL/blob/main/supp_forgery_mode_1.pdf.png">
+</div>
+<div align="center">
+  Fig.3 Examples of Hybrid Facial Forgery (HFF) Mode.
+</div>
 
-**Audio-Visual Full Synthesis (AVFS) Mode**: As presented in Fig. below, AVFS generates complete audio-visual content using text or single images. In the era of rapidly advancing artificial intelligence and generative technologies, such forgery patterns are expected to proliferate in real-world contexts.
+
+**Audio-Visual Asynchronous Manipulation (AVAM) Mode**: As shown in Fig.4 below, AVAM selects different temporal segments to modify audio content and video facial regions separately. This method also aligns with the multifaceted nature of real-world forgeries. Moreover, in audio-visual modalities, we incorporate the HFF forgery pattern by applying varied manipulation techniques across different temporal segments.
+
+<div align="center">
+  <img src="https://github.com/inclusionConf/DDL/blob/main/supp_forgery_mode_2.pdf.png">
+</div>
+<div align="center">
+  Fig.4 Examples of Audio-Visual Asynchronous Manipulation (AVAM) Mode. The specific audio-visual sample demonstrations are stored in Example_AVAM_Mode folder within the same supplementary material archive.
+</div>
+
+
+**Audio-Visual Full Synthesis (AVFS) Mode**: As presented in Fig.5 below, AVFS generates complete audio-visual content using text or single images. In the era of rapidly advancing artificial intelligence and generative technologies, such forgery patterns are expected to proliferate in real-world contexts.
+
+<div align="center">
+  <img src="https://github.com/inclusionConf/DDL/blob/main/supp_forgery_mode_3.pdf.png">
+</div>
+<div align="center">
+  Fig.5 Examples of Audio-Visual Full Synthesis (AVFS) Mode. The specific audio-visual sample demonstrations are stored in Example_AVFS_Mode folder within the same supplementary material archive.
+</div>
+
 
 ### Blending Method Examples
 As illustrated in Fig. below, (a) depicts Poisson fusion, a method commonly employed in previous research. (b) represents the state-of-the-art diffusion-based fusion technique, which, with the advancement of Artificial Intelligence and Generative Computing (AIGC) technologies, gradually emerges as the predominant fusion approach in real-world scenarios. Our DDL deliberately adopts this method to simulate contemporary trends and challenges in image manipulation.
 
 <div align="center">
-  <img src="https://github.com/inclusionConf/DDL/blob/main/supp_forgery_mode_1.pdf.png">
-</div>
-Fig.3 Examples of Hybrid Facial Forgery (HFF) Mode.
-
-<div align="center">
-  <img src="https://github.com/inclusionConf/DDL/blob/main/supp_forgery_mode_2.pdf.png">
-</div>
-Fig.4 Examples of Audio-Visual Asynchronous Manipulation (AVAM) Mode. The specific audio-visual sample demonstrations are stored in Example_AVAM_Mode folder within the same supplementary material archive.
-
-<div align="center">
-  <img src="https://github.com/inclusionConf/DDL/blob/main/supp_forgery_mode_3.pdf.png">
-</div>
-Fig.5 Examples of Audio-Visual Full Synthesis (AVFS) Mode. The specific audio-visual sample demonstrations are stored in Example_AVFS_Mode folder within the same supplementary material archive.
-
-<div align="center">
   <img src="https://github.com/inclusionConf/DDL/blob/main/supp_forgery_mode_4.pdf.png">
 </div>
-Fig.6 Examples of Blending Methods.
+<div align="center">
+  Fig.6 Examples of Blending Methods.
+</div>
+
 
 ## Experimental Details
 In this section, we provide detailed descriptions of the baseline models, training procedures, and the use of unseen test sets.
@@ -87,6 +109,10 @@ Audio-Visual task: We choose audio-visual localization models BA-TFD, BA-TFD+, a
 
 ### Training Details
 We refer to the open-source versions of the aforementioned models.
+
+<div align="center">
+  Table.1 Statistics of deepfake methods in the DDL dataset across image, video, and audio modalities. Methods are categorized by generation paradigm: Face Swapping (FS), Full-Face Synthesis (FFS), Face Editing (FE), Face Reenactment (FR), Text-to-Speech (TTS), Voice Conversion (VC), and Video-to-Audio (V2A).
+</div>
 
 <table>
     <tr>
