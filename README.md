@@ -2,6 +2,28 @@
 
 Dataset link: https://modelscope.cn/datasets/DDLteam/DDL_dataset/files
 
+
+Through the link above, you will see the following dataset format.
+```
+--phase1
+  --track1
+    --track1_crop_aa
+    --track1_crop_ab
+    ...
+  --track2
+    --track2.tar.gz
+
+--phase2
+  --track1
+    --test.tar.gz
+  --track2
+    --test.tar.gz
+```
+
+Phase 1 includes the training set, while track1 and track2 represent the image and video modalities, respectively.
+It should be noted that the training set of images is quite large and has been uploaded in chunks. Users need to download all chunks to merge them into the complete original file.
+Phase 2 contains test sets for both modalities.
+
 This supplementary material provides additional information to the manuscript, including deepfake generation pipeline, manipulated examples, experimental details, and deepfake methods.
 
 ## Deepfake Image Generation
